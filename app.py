@@ -7,7 +7,7 @@ st.title("✍️ 손글씨 숫자 인식기")
 st.write("손글씨 숫자 이미지를 업로드하면 인식 결과를 보여줍니다.")
 
 # 모델 로드
-model = load_model("model/my_model.h5")
+model = load_model("my_model.h5")
 
 # 이미지 업로드
 uploaded_file = st.file_uploader("숫자 이미지 파일을 업로드하세요", type=["png", "jpg", "jpeg"])
