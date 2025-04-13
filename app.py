@@ -19,7 +19,7 @@ if uploaded_file is not None:
     image = ImageOps.invert(image)                 # 색 반전
     image = image.resize((28, 28))                 # 28x28 크기로 조정
     img_array = np.array(image) / 255.0            # 정규화
-    img_array = img_array.reshape(1, 28, 28)       # 모델 입력 형식에 맞춤
+    img_array = img_array.reshape(1, 784)
 
     prediction = model.predict(img_array)
     predicted_digit = np.argmax(prediction)
